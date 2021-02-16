@@ -1,0 +1,39 @@
+body {
+  --headerHeight: 60px;
+  font-family: "Sora", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.wrapperStyles {
+  padding: 20px;
+}
+
+[class~="ant-btn-primary"] {
+  background-color: #646969;
+  border-color: #646969;
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: #646969;
+    border-color: #646969;
+  }
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}

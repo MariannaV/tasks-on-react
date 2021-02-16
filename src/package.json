@@ -1,0 +1,19 @@
+{
+  "name": "common-project-packages",
+  "description": "Common packages",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "antd": "4.10.3",
+    "mobx": "6.1.6",
+    "mobx-react-lite": "3.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.46",
+    "@types/react-dom": "16.9.8",
+    "react-refresh": "0.8.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.4.1"
+  }
+}

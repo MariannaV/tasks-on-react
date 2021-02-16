@@ -1,0 +1,55 @@
+@import "../../../styles/variables.scss";
+
+.list {
+  max-width: 80vw;
+  margin: 0 auto;
+
+  [class~="ant-list-items"] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+    background-color: rgba(218, 225, 230, 0.61);
+    @media (--max-mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (--min-mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 7px;
+      padding: 0;
+    }
+  }
+
+  [class~="ant-list-header"] {
+    border: initial;
+  }
+  [class~="ant-list-footer"] {
+    background-color: rgba(218, 225, 230, 0.61);
+  }
+
+  [class="ant-list-pagination"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.listItemWrapper {
+  width: 100%;
+  max-width: 240px;
+  height: 340px;
+  max-height: 340px;
+  margin: 0 auto;
+  [class~="ant-card-meta"] {
+    margin-bottom: 15px;
+  }
+}
+
+.buttonOpenModalCreateNew {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #666b6e9c;
+  border-color: #666b6e9c;
+}
