@@ -50,7 +50,6 @@ export const UsersList = observer(function UsersList() {
       className={styles.list}
       itemLayout="vertical"
       size="large"
-      header={<ListHeader />}
       loading={Boolean(loading)}
       pagination={paginationSettings}
       renderItem={renderItem}
@@ -58,10 +57,6 @@ export const UsersList = observer(function UsersList() {
       footer={<ListFooter />}
     />
   );
-});
-
-const ListHeader = observer(() => {
-  return <h1>Users: {usersStore.list.length}</h1>;
 });
 
 function ListFooter() {
