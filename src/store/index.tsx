@@ -35,7 +35,7 @@ export const usersStore = observable<NUsers.IUsersStore>({
       return data;
     } catch (error) {
       console.error("Get Users request error:", error);
-      throw error
+      throw error;
     } finally {
       this.loading = false;
     }
@@ -48,7 +48,7 @@ export const usersStore = observable<NUsers.IUsersStore>({
       return yield response.json();
     } catch (error) {
       console.error("Get user request error:", error);
-      throw error
+      throw error;
     } finally {
       this.map[userId].loading = false;
     }
@@ -117,7 +117,7 @@ export const usersStore = observable<NUsers.IUsersStore>({
       }
     } catch (error) {
       console.error("Change data request error:", error);
-      throw error
+      throw error;
     }
   }),
 });
