@@ -1,0 +1,8 @@
+$colorGray: #fefefedb;
+
+$tablet: 800px;
+$mobile: 400px;
+
+@custom-media --min-tablet (width >= $tablet);
+@custom-media --min-mobile ($mobile <= width < $tablet);
+@custom-media --max-mobile (width < $mobile);
